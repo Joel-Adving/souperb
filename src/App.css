@@ -1,38 +1,397 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Tajawal", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #ffffff;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Welcome Component */
+
+.welcome-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ddebe9;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 1em;
+}
+
+.welcome-h1 {
+  font-family: "Mystery Quest", cursive;
+  margin: 1em;
+  color: #066638;
+  margin-top: 4em;
+  margin-bottom: 0.8em;
+}
+
+.welcome-input {
+  text-align: center;
+  margin: 2em;
+  padding: 0.8em;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.26);
+}
+
+.welcome-input:focus {
+  border: none;
+  outline: none;
+}
+
+.welcome-link {
+  color: black;
+}
+
+.welcome-info {
+  color: #066638;
+  margin: 1em;
+}
+
+/* Header Component */
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: white;
+  width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.137);
 }
 
-.App-link {
-  color: #61dafb;
+.header-p {
+  margin: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-h3 {
+  color: red;
+  font-weight: 400;
+}
+
+/* header-2 */
+
+.header2-items-wrapper {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: #ddebe9;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.137);
+  height: 80px;
+}
+
+.header-2-h3 {
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+/* Campaign Card Component */
+
+.campaign-car-container {
+  text-align: center;
+  margin-top: 4.5em;
+  padding: 3.18em;
+  background: #ddebe9;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.233);
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.campaign-h3 {
+  color: #53646b;
+}
+
+/* Footer Component */
+
+footer {
+  position: fixed;
+  background: rgb(255, 255, 255);
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+}
+
+.footer-ul {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: 1.5em;
+}
+
+.footer-li {
+  text-decoration: none;
+  font-weight: 500;
+  color: #066638;
+}
+
+.middle-footer-li {
+  /* border-left: 1px solid rgb(138, 138, 138);
+  border-right: 1px solid rgb(138, 138, 138); */
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+/* menu-container */
+
+.menu-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3em;
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+.menu-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Menu Card Component */
+
+.menu-card-container {
+  max-width: 350px;
+  margin: 0.8em;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.164);
+  border-radius: 3px;
+}
+
+.menu-card-container:hover {
+  cursor: pointer;
+}
+
+.soup-img {
+  width: 100%;
+}
+.menu-card-img-wrapper {
+}
+
+.soup-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+}
+
+.soup-info-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.soup-info-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Profile */
+.profile-content-wrapper {
+  display: flex;
+  margin-top: 5em;
+
+  width: 100vw;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+.profile-content-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.profile-name {
+  align-self: center;
+  margin: 1em;
+}
+
+.pay-method {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dilivery-address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dilivery-address-list-item {
+  list-style: none;
+}
+
+.profile-button-1 {
+  color: #005b4d;
+  border: none;
+}
+
+.profile-button-1:hover {
+  cursor: pointer;
+}
+
+.profile-button-2:hover {
+  cursor: pointer;
+}
+
+.profile-button-2 {
+  background-color: #2ede9e;
+  border: none;
+}
+
+.profile-campain-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ddebe9;
+  border-radius: 5px;
+}
+
+.campain-header {
+  padding: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.klippkort {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  justify-content: space-between;
+  height: auto;
+  width: 200px;
+}
+
+.round {
+  background-color: #c4c4c4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.följ-leverans-button {
+  margin: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.tips-vän-button {
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+/* Cart */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  margin-bottom: 4.5em;
+  border: 1px solid red;
+  width: 100vw;
+  height: 78vh;
+  justify-content: space-between;
+}
+
+.cart-items {
+  justify-self: start;
+}
+
+.cost-wrapper {
+}
+
+/* Details */
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  width: 100vw;
+  height: 88vh;
+}
+
+.details-soup-image-wrapper {
+  height: 33vh;
+  width: 100%;
+  border: 1px solid blue;
+  overflow: hidden;
+}
+
+.details-img {
+  width: 100%;
+  margin-top: -10em;
+}
+
+.details-container-wrapper {
+  max-width: 400px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.details-main-content {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1em;
+}
+
+.details-price-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.foodgroup-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.details-p {
+  margin: 0.1em;
 }
