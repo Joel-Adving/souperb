@@ -109,6 +109,7 @@ function Cart() {
             color: "black",
             textDecoration: 0,
             textAlign: "center",
+            width: "92%",
           }}
           to="/leveransanvisningar"
         >

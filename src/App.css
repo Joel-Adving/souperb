@@ -14,16 +14,6 @@ button {
   cursor: pointer;
 }
 
-button:focus {
-  border: none;
-  outline: 0;
-}
-
-button:active {
-  border: none;
-  outline: 0;
-}
-
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -50,8 +40,9 @@ body {
 
 .welcome-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #ddebe9;
   width: 100vw;
   height: 100vh;
@@ -66,8 +57,7 @@ body {
   font-family: "Mystery Quest", cursive;
   margin: 1em;
   color: #066638;
-  margin-top: 4em;
-  margin-bottom: 0.8em;
+  text-align: center;
 }
 
 .welcome-input {
@@ -91,6 +81,7 @@ body {
 .welcome-info {
   color: #066638;
   margin: 1em;
+  text-align: center;
 }
 
 /* Header Component */
@@ -140,6 +131,7 @@ header {
 .campaign-car-container {
   text-align: center;
   margin-top: 4.5em;
+  margin-bottom: 12px;
   padding: 3.18em;
   background: #ddebe9;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.116);
@@ -242,13 +234,15 @@ footer {
 .profile-content-wrapper {
   display: flex;
   margin-top: 5em;
-
   width: 100vw;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   margin-bottom: 5em;
 }
 .profile-content-container {
   display: flex;
+  width: 500px;
   flex-direction: column;
   align-content: center;
   margin-left: 1em;
@@ -277,6 +271,7 @@ footer {
 .profile-button-1 {
   color: #005b4d;
   border: none;
+  background-color: white;
 }
 
 .profile-button-1:hover {
@@ -350,13 +345,6 @@ footer {
   margin-top: 5em;
   margin-bottom: 4.5em;
   flex-direction: column;
-}
-
-@media only screen and (max-width: 800px) {
-  .cart-container {
-    width: 100vw;
-    height: auto;
-  }
 }
 
 .cart-wrapper {
@@ -469,4 +457,104 @@ footer {
   border: 0;
   font-size: 28px;
   background-color: white;
+}
+
+/* Cart
+*/
+
+.checkout__container {
+  background-color: #e7f1f0;
+  width: 100vw;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.checkout__main_contet {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  width: 500px;
+}
+
+.payment__method {
+}
+
+.payment__row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12px;
+}
+
+.payment__row2 {
+  background-color: none;
+}
+
+.cart__button_radio {
+  background-color: #e7f1f0;
+  padding: 8px;
+  flex: 1;
+
+  text-align: start;
+}
+.cart__button_radio2 {
+  background-color: #e7f1f0;
+  padding: 8px;
+
+  text-align: start;
+}
+
+.button-toggle {
+  border: 1px solid #73a69e;
+}
+
+.circle__container {
+  margin-top: 1em;
+  width: 180px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #ddebe9;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circlecard {
+  display: flex;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.profile__container {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-container {
+    width: 100vw;
+    height: auto;
+  }
+  .checkout__container {
+    background-color: #e7f1f0;
+    width: 100vw;
+  }
+  .payment__row {
+    width: 90vw;
+  }
+  .cart__button_radio {
+    width: 100vw;
+  }
+  .cart__button_radio2 {
+    width: 100vw;
+  }
+  .profile-content-container {
+    width: 100vw;
+  }
 }

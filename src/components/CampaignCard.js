@@ -1,12 +1,12 @@
-import React from 'react'
-import "../App.css"
+import React from "react";
+import "../App.css";
 
-function CampaignCard() {
-    return (
-        <div className="campaign-car-container">
-            <h3 className="campaign-h3">Få en gratis soppa om du delar!</h3>
-        </div>
-    )
+function CampaignCard(props) {
+  return (
+    <div className="campaign-car-container">
+      <h3 className="campaign-h3">{props.title}</h3>
+    </div>
+  );
 }
 
-export default CampaignCard
+export default CampaignCard;

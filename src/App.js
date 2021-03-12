@@ -6,7 +6,9 @@ import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import Details from "./pages/Details";
-import Instructions from "./pages/DeliveryInstructions";
+import DeliveryInstructions from "./pages/DeliveryInstructions";
+import OnItsWay from "./pages/OnItsWay";
+import Map from "./pages/Map";
 
 function App() {
   return (
@@ -17,7 +19,13 @@ function App() {
         <Route exact path="/kundvagn" component={Cart} />
         <Route exact path="/profil" component={Profile} />
         <Route exact path="/details" component={Details} />
-        <Route exact path="/leveransanvisningar" component={Instructions} />
+        <Route
+          exact
+          path="/leveransanvisningar"
+          component={DeliveryInstructions}
+        />
+        <Route exact path="/onitsway" component={OnItsWay} />
+        <Route exact path="/map" component={Map} />
       </Switch>
     </Router>
   );

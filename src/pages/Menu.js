@@ -9,7 +9,7 @@ function Menu() {
     <div>
       <Header />
       <div className="menu-page-wrapper">
-        <CampaignCard />
+        <CampaignCard title="Du får var sjätte soppa helt gratis!" />
         <div className="menu-content-container">
           <Menucard />
           <Menucard />

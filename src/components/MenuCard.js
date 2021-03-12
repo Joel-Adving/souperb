@@ -20,11 +20,11 @@ function MenuCard() {
         <div className="soup-info">
           <div className="soup-info-left">
             <div>Ärtig spenatsoppa</div>
-            <div>90 kr</div>
+            <div>90 Kr</div>
           </div>
           <div className="soup-info-right">
+            <div>320 kcal</div>
             <div>20-30 min</div>
-            <div>320 kcal, vegan</div>
           </div>
         </div>
       </div>

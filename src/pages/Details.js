@@ -25,8 +25,8 @@ function Details() {
               <p className="details-p">SEK</p>
             </div>
             <div className="foodgroup-info">
-              <p className="details-p">320 kcsl</p>
-              <p className="details-p">vegan</p>
+              <p className="details-p">320 kcal</p>
+              <p className="details-p">- vegansk</p>
             </div>
             <h3>Beskrivning</h3>
             <p>
