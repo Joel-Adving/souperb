@@ -8,12 +8,6 @@ function MenuCard() {
   return (
     <Link className="link-visited" to="/details">
       <div className="menu-card-container">
-        {/* {DataCue.map((soups, index) => 
-
-        return (
-        )
-        
-        )} */}
         <div className="menu-card-img-wrapper">
           <img className="soup-img" src={soup} alt="" />
         </div>

@@ -1,15 +1,18 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import GoogleMap from "../components/GoogleMap";
 
-function Map() {
+function MapScreen() {
   return (
     <div>
       <Header />
-      <div></div>
+      <div>
+        <GoogleMap />
+      </div>
       <Footer />
     </div>
   );
 }
 
-export default Map;
+export default MapScreen;

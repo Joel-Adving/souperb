@@ -56,14 +56,14 @@ function Details() {
                 +
               </button>
             </div>
-            <button className="add__to__cart__button">
-              <Link
-                style={{ color: "black", textDecoration: 0 }}
-                to="/kundvagn"
-              >
-                LÄGG TILL I KUNDVAGN
-              </Link>
-            </button>
+
+            <Link
+              className="add__to__cart__button"
+              style={{ color: "black", textDecoration: 0 }}
+              to="/kundvagn"
+            >
+              LÄGG TILL I KUNDVAGN
+            </Link>
           </div>
         </div>
       </div>

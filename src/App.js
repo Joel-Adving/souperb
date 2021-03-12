@@ -8,7 +8,7 @@ import Profile from "./pages/Profile";
 import Details from "./pages/Details";
 import DeliveryInstructions from "./pages/DeliveryInstructions";
 import OnItsWay from "./pages/OnItsWay";
-import Map from "./pages/Map";
+import MapScreen from "./pages/MapScreen";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           component={DeliveryInstructions}
         />
         <Route exact path="/onitsway" component={OnItsWay} />
-        <Route exact path="/map" component={Map} />
+        <Route exact path="/map" component={MapScreen} />
       </Switch>
     </Router>
   );
